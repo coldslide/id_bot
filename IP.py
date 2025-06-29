@@ -3,10 +3,10 @@ import requests
 import datetime
 import pytz  
 
-TOKEN = '7592565318:AAFW7-jAbMPvXsoqHIOXbiPtO9m4nhpd5N8'
+TOKEN = '#у фазербота берите'
 bot = telebot.TeleBot(TOKEN)
 
-MY_CHAT_ID = '7512643994'  
+MY_CHAT_ID = '#свой айдишник пишите'  
 
 bot_runs = 0  
 
