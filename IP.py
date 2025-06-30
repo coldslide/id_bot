@@ -3,10 +3,10 @@ import requests
 import datetime
 import pytz  
 
-TOKEN = '#у фазербота берите'
+TOKEN = 'TELEGRAM_TOKEN'
 bot = telebot.TeleBot(TOKEN)
 
-MY_CHAT_ID = '#свой айдишник пишите'  
+CHAT_ID = 'CHAT_ID'  
 
 bot_runs = 0  
 
@@ -43,7 +43,7 @@ def send_welcome(message):
         f"язык пользователя: {message.from_user.language_code if message.from_user.language_code else 'неизвестно'}"
     )
 
-    bot.send_message(MY_CHAT_ID, response_message)
+    bot.send_message(CHAT_ID, response_message)
     bot.reply_to(message, "в списке тебя нету) приобрести ботов/программы и разные приколы можно тут: https://t.me/m/20yi1rVpMTcy")
 
 bot.polling(none_stop=True)
